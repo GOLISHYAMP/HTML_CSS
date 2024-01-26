@@ -91,26 +91,154 @@ section{
 
 .markets .market_btn{
     width: 100%;
-    color: green;
+    color: black;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 800;
     font-family: 'Raleway', sans-serif;
-    border: 2px solid rgb(173, 236, 187);
+    border: 2px solid rgb(95, 92, 92);
     border-radius: 15px;
-    padding: 5px 5px;
+    padding: 5px 0px;
     margin: 0 auto;
     transition: 0.4s ease-in-out;
     display: flex;
     justify-content: center;
-    background-color: rgb(225, 234, 223);
+    background-color: rgb(227, 220, 220);
+    text-transform:uppercase;
+    margin: 5px 0px;
 }
 
 .markets .market_btn:hover{
     filter: none;
     transform: scale(1.1);
     text-shadow: #013829;
-    background-color: rgb(15, 70, 3);
+    background-color: rgb(2, 12, 0);
     color: white;
     font-weight: 800;
 
 }
+
+/* about section */
+.about .container h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about .container h3{
+    font-weight: 500;
+    line-height: 32px;
+    font-size:24px;
+}
+
+.about .container ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.about .container ul li{
+    padding: 10px 0 0 20px;
+    display: flex;
+}
+
+.about .container ul li p{
+    margin-bottom: 0;
+}
+
+.about .container ul li i{
+    font-size: 20px;
+    color: black;
+    margin-left: 7px;
+}
+
+.font-italic{
+    font-style: italic;
+}
+
+/* about section end */
+
+/* counter section */
+.counts{
+    background-color: grey;
+    padding: 40px 0 20px 0;
+    color : white;
+}
+
+.counts .counters span{
+    font-size: 36px;
+    display: block;
+    font-weight: 700;
+}
+
+.counts .counters p{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0;
+    margin : 0 0 20px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* counter section end */
+
+/* why us section  */
+.why_us .content{
+    padding: 30px;
+    background-color: grey;
+    border-radius: 4px;
+    color: white;
+}
+
+.why_us .content h3{
+    font-size : 34px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.why_us .content p{
+    margin-bottom: 30px;
+}
+.why_us .content .more_btn{
+    display: inline-block;
+    background-color: rgb(81, 78, 78);
+    padding:6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.4s ease-in-out;
+}
+.why_us .content .more_btn:hover{
+    background-color: rgb(247, 247, 247);
+    font-weight: 800;
+    color: #0a0909;
+    
+}
+.why_us .icon_boxes .icon_box{
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(233, 231, 231);
+    padding: 40px 30px;
+    width: 100%;
+    box-shadow:0px 2px 15px rgba(0,0,0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+.why_us .icon_boxes .icon_box:hover{
+    box-shadow:0px 5px 25px rgba(0,0,0,0.15);
+
+}
+
+.why_us .icon_boxes .icon_box i{
+    font-size: 40px;
+    color:  rgb(81, 78, 78);
+    margin-bottom: 30px;
+}
+
+.why_us .icon_boxes .icon_box h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.why_us .icon_boxes .icon_box p{
+    font-size: 15px;
+    color: black;
+}
+/* why us section end */
