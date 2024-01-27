@@ -229,16 +229,192 @@ section{
     font-size: 40px;
     color:  rgb(81, 78, 78);
     margin-bottom: 30px;
+    transition: 0.4s ease-in-out;
 }
 
 .why_us .icon_boxes .icon_box h4{
     font-size: 20px;
     font-weight: 700;
     margin: 0 0 30px 0;
+    color:  rgb(81, 78, 78);
+    transition: 0.4s ease-in-out;
 }
 
 .why_us .icon_boxes .icon_box p{
     font-size: 15px;
     color: black;
 }
+
+.why_us .icon_boxes .icon_box:hover i{
+    color: black;
+    transform: scale(1.1);
+
+}
+.why_us .icon_boxes .icon_box:hover h4{
+    color: black;
+    transform: scale(1.1);
+}
 /* why us section end */
+ 
+/* samples section */
+.section_title{
+    padding-bottom: 30px;
+}
+
+.section_bg{
+    background-color: rgb(190, 187, 187);;
+}
+
+.section_title p{
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+}
+
+.section_title h2{
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.section_title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(81, 78, 78);
+    bottom: 0;
+    left: 0;
+}
+
+.sample .sample_item{
+    margin-bottom: 30px;
+}
+
+.sample_item .sample_wrap{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+/* 
+.sample_item .sample_wrap ::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:2;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+} */
+.sample_item .sample_wrap img {
+    transition: transform 0.3s ease;
+}
+
+.sample_item:hover{
+    transform: scale(1.1); /* You can adjust the scale factor as per your preference */
+}
+.sample_item .sample_wrap .sample_info{
+    opacity: 0;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.sample_item .sample_wrap .sample_info h4{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.sample_item .sample_wrap .sample_info p{
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+}
+/* .sample_item .sample_wrap:hover::before{
+    opacity: 1;
+} */
+
+.sample_item .sample_wrap:hover .sample_info{
+    opacity: 1;
+}
+/* samples section end */
+
+/* testimonial section */
+.testimonial .testimonial_item{
+    padding: 30px;
+    height: 400px;
+    width: auto;
+    margin: 30px 15px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background-color: #fff;
+
+}
+
+.testimonial .testimonial_item p{
+    font-style: italic;
+}
+
+.testimonial .testimonial_item i{
+
+    font-size: 22px;
+    color:  rgb(81, 78, 78);
+}
+
+.testimonial .testimonial_item .testimonial_img{
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.testimonial .testimonial_item h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 5px 0;
+    color: rgb(81, 78, 78);
+}
+
+.testimonial .testimonial_item h4{
+    font-size: 14px;
+    color: rgb(81, 78, 78);
+    margin: 0;
+}
+
+.testimonial_slider .slick-dots li{
+    margin: 0 3px;
+}
+
+.testimonial_slider .slick-dots li button::before{
+    font-size: 16px;
+    color:rgb(81, 78, 78);
+}
+
+.testimonial_slider .slick-dots li.slick-active button::before{
+    opacity: 1;
+    color:rgb(81, 78, 78);
+
+}
+/* testimonial section end*/
+
